@@ -16,9 +16,6 @@ int main(){
     for(int i; i < 3; i++){
         printf("Size = %d \n", arraySize[i]);
     } */
-    /*int arrayOne[arraySize[1]];
-    int arrayTwo[arraySize[2]];
-    int arrayThree[arraySize[3]]; */
     for(int i = 0; i < 3; i++){
         float arrayTemp[arraySize[i]];
         printf("Fill out array %d which is %d long. \n", i, arraySize[i]);
@@ -39,7 +36,7 @@ int main(){
         //Standard deviation section
         float tempDeviationHolder = 0;
         float tempDeviation = 0;
-        for(int d = 0; d < arraySize[i]; d++){
+        for(int d = 0; d < arraySize[i]; d++){ //This loop calculates the sum, square and do division before I take the square root outside the loop
             tempDeviationHolder = (arrayTemp[d] - tempAverage);
             tempDeviationHolder = tempDeviationHolder * tempDeviationHolder;
             tempDeviationHolder = (tempDeviationHolder / arraySize[i]);
