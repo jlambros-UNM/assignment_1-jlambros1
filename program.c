@@ -1,4 +1,4 @@
-//This is a program created by James Lambros
+//This is a program created by James Lambros testing
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
